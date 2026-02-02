@@ -22,7 +22,7 @@ import {
 import { motion } from 'framer-motion';
 
 // --- Sub-components (Core Logic) ---
-
+const CHECKOUT_URL = "https://pay.cakto.com.br/hqkp9td_751652";
 const BackgroundGrid: React.FC = () => {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
@@ -165,6 +165,11 @@ const CTAButton: React.FC<{ text: string; className?: string; onClick?: () => vo
 // --- Main App Component ---
 
 export default function App() {
+
+  const goToCheckout = useCallback(() => {
+  window.location.href = CHECKOUT_URL;
+}, []);
+
   const scrollToBuy = useCallback(() => {
     document.getElementById('buy')?.scrollIntoView({ behavior: 'smooth' });
   }, []);
@@ -336,7 +341,7 @@ export default function App() {
                   <div className="flex flex-col items-center"><span className="text-7xl sm:text-9xl font-black text-[#39FF14] italic tracking-tighter leading-none drop-shadow-[0_0_40px_rgba(57,255,20,0.4)]">R$ 27,90</span><p className="text-[10px] font-mono text-[#39FF14]/60 uppercase tracking-widest mt-6">Pagamento Único • Acesso Vitalício</p></div>
                 </div>
               </div>
-              <div className="relative z-10 w-full space-y-8"><CTAButton text="GARANTIR MEU ACESSO AGORA" className="w-full py-7 text-xl" /><p className="text-sm text-white/30 font-light italic text-center max-w-sm mx-auto leading-relaxed">Pelo preço de um café e um lanche, você economiza meses de tentativa e erro e milhares de reais em cursos inúteis.</p></div>
+              <div className="relative z-10 w-full space-y-8"><CTAButton text="GARANTIR MEU ACESSO AGORA" className="w-full py-7 text-xl" onClick={goToCheckout} /><p className="text-sm text-white/30 font-light italic text-center max-w-sm mx-auto leading-relaxed">Pelo preço de um café e um lanche, você economiza meses de tentativa e erro e milhares de reais em cursos inúteis.</p></div>
               <div className="mt-16 pt-16 border-t border-white/5 w-full flex flex-col items-center gap-8"><div className="flex items-center gap-10 grayscale opacity-30"><span className="font-black italic text-xl">VISA</span><span className="font-black italic text-xl">MASTER</span><span className="font-black italic text-xl">PIX</span></div><div className="flex items-center gap-3 text-[10px] font-mono text-white/20 uppercase tracking-widest bg-white/5 px-8 py-4 rounded-full border border-white/5"><ShieldCheck size={16} className="text-[#39FF14]/50" />Conexão Criptografada SSL</div></div>
             </div>
           </div>
