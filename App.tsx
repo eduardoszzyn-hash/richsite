@@ -206,7 +206,7 @@ export default function App() {
               text="Entenda o que realmente existe no mercado digital, quais modelos fazem sentido para o seu perfil e como entrar de forma estratégica e lucrativa sem cair em ilusão de gurus, promessas de enriquecimento rápido ou armadilhas disfarçadas de oportunidade."
             />
             <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 3, duration: 0.8 }} className="mt-8 text-sm sm:text-base md:text-lg text-white/40 italic font-light tracking-wide leading-relaxed max-w-2xl mx-auto px-6">
-              Se você já percebeu que todo mundo promete demais e explica de menos, este guia foi criado antes de você perder mais tempo, dinheiro e energy.
+              Se você já percebeu que todo mundo promete demais e explica de menos, este guia foi criado antes de você perder mais tempo, dinheiro e energia.
             </motion.p>
           </div>
           <div className="flex flex-col items-center gap-16 mt-20 sm:mt-28">
@@ -231,7 +231,7 @@ export default function App() {
                 "Ciclos constantes de promessas milagrosas.",
                 "Estratégias que expiram em semanas.",
                 "Complexidade desnecessária para vender mentoria.",
-                "Sensação constante de estar fazendo algo errado, sem saber por onde começar e completamente perdido no mercado digital."
+                "Você se sente constantemente perdido, com a sensação de que está fazendo tudo errado, enquanto vê todo mundo lucrar, menos você."
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4 group">
                   <div className="w-6 h-6 rounded-full bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-500 flex-shrink-0 mt-1"><AlertTriangle size={14} /></div>
@@ -270,10 +270,10 @@ export default function App() {
           <p className="text-white/40 text-sm sm:text-lg font-mono tracking-[0.4em] uppercase font-bold max-w-3xl mx-auto">Acesso Imediato ao Mapa Racional do Mercado Digital.</p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          <ModuleCard index={0} icon={<Search />} title="A Anatomia da Ilusão" description={<p>Entenda como o mercado cria confusão para te manter comprando cursos e como identificar promessas falsas antes de perder seu capital.</p>} result="Você entende que o problema nunca foi sua capacidade — e sim o jogo" />
-          <ModuleCard index={1} icon={<Map />} title="O Mapa do Mercado Real" description={<p>Veja um raio-x honesto dos principais modelos: PLR, Infoprodutos, Afiliados, Dropshipping, TikTok Shop e Prestação de Serviços Digitais, detalhando o investimento, esforço e riscos reais de cada um.</p>} result="Você para de pular de galho em galho e passa a enxergar o mercado como um tabuleiro de negócios racional." />
-          <ModuleCard index={2} icon={<BrainCircuit />} title="O Filtro de Perfil" description={<p>A metodologia para cruzar seu tempo, capital e habilidades com o modelo ideal. <span className="text-[#39FF14] font-bold italic">Pare de forçar caminhos</span> que não foram feitos para o seu estilo de jogo.</p>} result="Direcionamento Estratégico" />
-          <ModuleCard index={3} icon={<Zap />} title="Execução Enxuta" description={<p>Como construir sua primeira operação sem ferramentas de R$ 500/mês. Foco total em <span className="text-[#39FF14] font-bold">Fluxo de Caixa</span> imediato e escalabilidade orgânica.</p>} result="Ready for Operation" />
+          <ModuleCard index={0} icon={<Search />} title="O Detector de Mentiras" description={<p>Entenda como o mercado cria confusão para te manter comprando cursos e como identificar promessas falsas antes de perder seu capital.</p>} result="Você entende que o problema nunca foi sua capacidade — e sim o jogo" />
+          <ModuleCard index={1} icon={<Map />} title="O Mapa do Mercado Real" description={<p>Veja um raio-x honesto dos principais modelos: PLR, Infoprodutos, Afiliados, Dropshipping, TikTok Shop e Prestação de Serviços Digitais, detalhando o investimento, esforço e riscos reais de cada um.</p>} result=" O fim da confusão mental. Você deixa de tentar a sorte e passa a ter um plano lógico, escolhendo o modelo de negócio que realmente coloca dinheiro no seu bolso." />
+          <ModuleCard index={2} icon={<BrainCircuit />} title="O Filtro de Perfil" description={<p>Descubra qual modelo combina com o dinheiro e o tempo que você tem hoje e pare de perder energia tentando caminhos que não servem para a sua realidade. <span className="text-[#39FF14] font-bold italic">Pare de forçar caminhos</span> que não foram feitos para o seu estilo de jogo.</p>} result="Você saberá exatamente qual caminho seguir para lucrar no digital começando com o que tem hoje, sem precisar de grandes investimentos ou ferramentas caras." />
+          <ModuleCard index={3} icon={<Zap />} title="Manual do Lucro Enxuto" description={<p>Como construir sua primeira operação sem ferramentas de R$ 500/mês. Foco total em <span className="text-[#39FF14] font-bold">Fluxo de Caixa</span> imediato e escalabilidade orgânica.</p>} result="Você aprende a montar uma operação enxuta e econômica, focada exclusivamente em colocar dinheiro no seu bolso no menor tempo possível." />
         </div>
       </Section>
 
@@ -286,7 +286,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           <BonusCard number="BÔNUS 01" title="O Filtro de Viabilidade" subtitle="Pare de dar tiros no escuro" description="Um protocolo para identificar nichos que realmente dão lucro e descartar os 'buracos negros' de capital antes de investir seu tempo neles." icon={<Fingerprint size={32} />} delay={0.1} />
           <BonusCard number="BÔNUS 02" title="Checklist da Operação" subtitle="Fature sem pagar 'pedágio'" description="A lista das únicas ferramentas gratuitas necessárias para iniciar no digital de forma enxuta, evitando assinaturas caras e focando no ROI." icon={<Zap size={32} />} delay={0.2} />
-          <BonusCard number="BÔNUS 03" title="Mapa de Decisão" subtitle="Blindagem cognitiva instantânea" description="Um material simples para revisar seu caminho sempre que surgir uma nova 'oportunidade milagrosa'. Mantenha o foco absoluto na meta." icon={<LayoutGrid size={32} />} delay={0.3} />
+          <BonusCard number="BÔNUS 03" title="Mapa de Decisão" subtitle="Blindagem cognitiva instantânea" description="Um material de bolso para você nunca mais se perder no excesso de informação. Surgiu uma nova estratégia? Olhe para o mapa, veja se ela é real ou apenas perda de tempo e mantenha os olhos no que realmente traz lucro." icon={<LayoutGrid size={32} />} delay={0.3} />
         </div>
         <div className="mt-32 flex flex-col items-center text-center">
             <div className="max-w-2xl p-8 rounded-2xl bg-[#1A1A1A]/40 border border-white/5 relative mb-16"><div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-[#39FF14] text-black font-mono font-bold text-[10px] rounded-full">RELATÓRIO PDF</div><p className="text-white/40 font-mono text-sm uppercase tracking-widest font-bold">"Material técnico, denso e sem enrolação. Criado para quem cansou de ser audiência e quer ser proprietário."</p></div>
